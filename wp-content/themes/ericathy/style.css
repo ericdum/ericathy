@@ -157,9 +157,8 @@ h6{ font-size: 13px; }
     border-radius: 180px;
     vertical-align: middle;
     display: inline-block;
-    -webkit-transform: rotate(0deg);
-    /*-webkit-animation: rotate 3600s infinite linear;*/
-    -webkit-animation-play-state: running;
+    animation: rotate 3600s infinite linear;
+    animation-play-state: running;
 }
 #CClock .clock-m{
     width: 110px;
@@ -167,8 +166,8 @@ h6{ font-size: 13px; }
     top: 35px;
     left: 70px;
     border-radius: 110px;
-    -webkit-animation: rotate 60s infinite linear;
-    -webkit-animation-play-state: running;
+    animation: rotate 60s infinite linear;
+    animation-play-state: running;
 }
 #CClock .clock-s{
     width: 70px;
@@ -225,7 +224,7 @@ article {
     float: left;
 }
 
-@-webkit-keyframes rotate{
-    0%{ -webkit-transform:rotate(0deg); } 
-    100%{ -webkit-transform:rotate(360deg); } 
+@keyframes rotate{
+    0%{ transform:rotate(0deg); } 
+    100%{ transform:rotate(360deg); } 
 }

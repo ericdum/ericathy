@@ -41,9 +41,9 @@
 
 <section id="theTime">
     <h5>我们结婚已经<h5>
-    <h2 class="timer" data-time="2013-1-4 10:00:00"></h2>
+    <h2 class="timer" data-time="2013-1-4"></h2>
     <h5>我们在一起已经<h5>
-    <h2 class="timer" data-time="2009-9-22 0:00:00"></h2>
+    <h2 class="timer" data-time="2009-9-22"></h2>
 </section>
 
 <section id="body" class="clearfix">
