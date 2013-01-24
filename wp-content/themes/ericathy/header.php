@@ -43,11 +43,16 @@
     </h1>
 </header>
 
-<section id="theTime">
+<div id="theTime">
     <h5>我们结婚已经<h5>
     <h2 class="timer" data-time="2013-01-04"></h2>
     <h5>我们在一起已经<h5>
     <h2 class="timer" data-time="2009-09-22"></h2>
-</section>
+</div>
 
-<section id="body" class="clearfix">
+<div id="separator" class="clearfix">
+    <div class="eric"></div>
+    <div class="cathy"></div>
+</div>
+
+<div id="body" class="clearfix">

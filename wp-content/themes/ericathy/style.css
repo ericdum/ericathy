@@ -228,10 +228,15 @@ h6{ font-size: 13px; }
 }
 
 #theTime {
-    text-align: center;
-    color: #c0c0c0;
+    position: relative;
+    margin: 0 auto;
+    width: 330px;
     line-height: 1.8;
-}
+    color: #c0c0c0;
+    text-align: center;
+    background: #fff;
+    z-index: 2;
+} 
 #theTime .timer{
     font-size: 30px;
     display: none;
@@ -247,12 +252,105 @@ h6{ font-size: 13px; }
     vertical-align: baseline;
 }
 
-#body {
-    padding: 20px;
+#separator{
+    width: 100%;
+    margin-top: -27px;
+    height: 27px;
+    z-index: 1;
+}
+#separator div{
+    float: left;
+    width: 50%;
+    border-top: 1px solid;
+}
+#separator .eric{
+    border-top-color: #ef857d;
+}
+#separator .cathy{
+    border-top-color: #a2d7d4;
 }
 
-article {
-    float: left;
+#body {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+article{
+    position: relative;
+    width: 290px;
+    height: 290px;
+    margin: 40px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s;
+    -ms-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+}
+article a{
+    width: 290px;
+    height: 290px;
+    display: block;
+    border-radius: 145px;
+    overflow: hidden;
+}
+article.text a{
+    font-size: 30px;
+    text-align: center;
+    line-height: 290px;
+    color: #fff;
+    background: #d9d9d9;
+}
+article.image a{
+    background: #d9d9d9;
+}
+article .masker{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 290px;
+    height: 290px;
+    border-radius: 145px;
+    background: #000;
+    opacity: 0;
+    transition: all .3s;
+    -ms-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+}
+article .detail{
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 180px;
+    height: 180px;
+    color: #cccccc;
+    border-radius: 90px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .4s;
+    -ms-transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+}
+article .detail h2{
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 50px;
+    line-height: 180%;
+}
+article .detail p{
+    font-size: 16px;
+}
+article:hover .detail{
+    opacity: 1;
+}
+article:hover .masker{
+    opacity: .2;
 }
 
 @keyframes rotate{

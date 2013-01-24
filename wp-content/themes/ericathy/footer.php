@@ -1,4 +1,4 @@
-</section>
+</div>
 <?php wp_footer(); ?>
 <script type="text/javascript">
 
