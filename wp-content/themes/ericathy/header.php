@@ -32,8 +32,10 @@
         <span class="eric">ERI</span>
         <div id="CClock">
             <div class="clock">
+                <div class="clock-h">
                 <div class="clock-m">
                     <div class="clock-s">c</div>
+                </div>
                 </div>
             </div>
         </div>

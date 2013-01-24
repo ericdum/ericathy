@@ -161,8 +161,23 @@ h6{ font-size: 13px; }
     width: 180px;
     height: 180px;
     border-radius: 180px;
+    transition: all 1s;
+    -ms-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+#CClock .clock-h{
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
     animation: rotate 3600s infinite linear;
     animation-play-state: running;
+    -ms-animation: rotate 3600s infinite linear;
+    -ms-animation-play-state: running;
+    -moz-animation: rotate 3600s infinite linear;
+    -moz-animation-play-state: running;
+    -webkit-animation: rotate 3600s infinite linear;
+    -webkit-animation-play-state: running;
 }
 #CClock .clock-m{
     width: 110px;
@@ -170,8 +185,10 @@ h6{ font-size: 13px; }
     top: 35px;
     left: 70px;
     border-radius: 55px;
-    animation: rotate 60s infinite linear;
-    animation-play-state: running;
+    transition: all 1s;
+    -ms-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
 }
 #CClock .clock-s{
     width: 70px;
@@ -179,6 +196,18 @@ h6{ font-size: 13px; }
     top: 20px;
     left: 40px;
     border-radius: 35px;
+    transform-origin-x: 15px;
+    animation: rotate 60s infinite linear;
+    -ms-animation-play-state: running;
+    -ms-transform-origin-x: 15px;
+    -ms-animation: rotate 60s infinite linear;
+    -ms-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -moz-transform-origin-x: 15px;
+    -moz-animation: rotate 60s infinite linear;
+    -webkit-transform-origin-x: 15px;
+    -webkit-animation: rotate 60s infinite linear;
+    -webkit-animation-play-state: running;
 }
 
 .clock{
@@ -188,12 +217,10 @@ h6{ font-size: 13px; }
 }
 .clock-m{
     position: absolute;
-    top: center;
     background: #a2d7d4 none;
     overflow: hidden;
 }
 .clock-s{
-    top: center;
     position: absolute;
     background: #ffffff none;
     overflow: hidden;
@@ -229,6 +256,17 @@ article {
 }
 
 @keyframes rotate{
-    0%{ transform:rotate(0deg); } 
-    100%{ transform:rotate(360deg); } 
+    0%{ -ms-transform:rotate(0deg); } 
+    100%{ -ms-transform:rotate(360deg); } 
+}
+@-ms-keyframes rotate{
+    0%{ -ms-transform:rotate(0deg); } 
+    100%{ -ms-transform:rotate(360deg); } 
+}
+@-moz-keyframes rotate{
+    0%{ -moz-transform:rotate(0deg); } 
+    100%{ -moz-transform:rotate(360deg); } 
+}
+@-webkit-keyframes rotate{
+    100%{ -webkit-transform:rotate(360deg); } 
 }

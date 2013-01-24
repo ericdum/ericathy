@@ -13,7 +13,7 @@ $(document).ready(function(){
         var $this = $(this);
         setClock.call( this, function(i, s){
             $this.css({ 'transform': 'rotate('+i+'deg)' });
-            $this.children().css({ 'transform': 'rotate('+s+'deg)' });
+            $this.find('.clock-m').css({ 'transform': 'rotate('+s+'deg)' });
         });
     });
 });
@@ -24,6 +24,7 @@ var HOUR = 60 * MINUTE;
 var DAY = 24 * HOUR;
 var MONTH = 30 * DAY;
 var YEAR = 365 * DAY;
+var PI = 3.141592653;
 
 function setClock( callback ){
     var time = new Date(),
