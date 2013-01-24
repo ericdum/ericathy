@@ -12,6 +12,8 @@ $(document).ready(function(){
     $('.clock').each(function(){
         var $this = $(this);
         setClock.call( this, function(i, s){
+            $this.css({ 'transform': 'rotate('+i+'deg)' });
+            $this.children().css({ 'transform': 'rotate('+s+'deg)' });
         });
     });
 });
