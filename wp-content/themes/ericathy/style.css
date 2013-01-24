@@ -152,9 +152,9 @@ h6{ font-size: 13px; }
 }
 
 #CClock{
-    width: 180px;
-    height: 180px;
-    border-radius: 180px;
+    width: 179px;
+    height: 179px;
+    border-radius: 90px;
     vertical-align: middle;
     display: inline-block;
     animation: rotate 3600s infinite linear;
@@ -171,7 +171,7 @@ h6{ font-size: 13px; }
     height: 110px;
     top: 35px;
     left: 70px;
-    border-radius: 110px;
+    border-radius: 55px;
     animation: rotate 60s infinite linear;
     animation-play-state: running;
     -ms-animation: rotate 60s infinite linear;
@@ -186,7 +186,7 @@ h6{ font-size: 13px; }
     height: 70px;
     top: 20px;
     left: 40px;
-    border-radius: 70px;
+    border-radius: 35px;
 }
 
 .clock{
