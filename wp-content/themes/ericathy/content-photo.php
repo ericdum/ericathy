@@ -2,5 +2,5 @@
     <div class="masker"></div>
     <div class="detail">
         <h2>- <?php the_title()?> -</h2>
-        <p><?=get_the_date('Y-m-d');?></p>
+        <p><?php echo get_the_date('Y-m-d');?></p>
     </div>
