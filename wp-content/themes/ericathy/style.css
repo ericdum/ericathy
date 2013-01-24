@@ -338,9 +338,9 @@ article .detail{
     -webkit-transition: all .4s;
 }
 article .detail h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: normal;
-    margin-top: 50px;
+    margin-top: 55px;
     line-height: 180%;
 }
 article .detail p{
