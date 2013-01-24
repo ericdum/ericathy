@@ -30,9 +30,11 @@
 <header id="header">
     <h1 title="ERIC&CATHY">
         <span class="eric">ERI</span>
-        <div id="CClock" class="clock">
-            <div class="clock-m">
-                <div class="clock-s">c</div>
+        <div id="CClock">
+            <div class="clock">
+                <div class="clock-m">
+                    <div class="clock-s">c</div>
+                </div>
             </div>
         </div>
         <span class="cathy">ATHY</span>

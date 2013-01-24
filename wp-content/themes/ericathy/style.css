@@ -152,19 +152,17 @@ h6{ font-size: 13px; }
 }
 
 #CClock{
-    width: 179px;
-    height: 179px;
-    border-radius: 90px;
-    vertical-align: middle;
+    width: 180px;
+    height: 180px;
     display: inline-block;
+    vertical-align: middle;
+}
+#CClock .clock{
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
     animation: rotate 3600s infinite linear;
     animation-play-state: running;
-    -ms-animation: rotate 3600s infinite linear;
-    -ms-animation-play-state: running;
-    -moz-animation: rotate 3600s infinite linear;
-    -moz-animation-play-state: running;
-    -webkit-animation: rotate 3600s infinite linear;
-    -webkit-animation-play-state: running;
 }
 #CClock .clock-m{
     width: 110px;
@@ -174,12 +172,6 @@ h6{ font-size: 13px; }
     border-radius: 55px;
     animation: rotate 60s infinite linear;
     animation-play-state: running;
-    -ms-animation: rotate 60s infinite linear;
-    -ms-animation-play-state: running;
-    -moz-animation: rotate 60s infinite linear;
-    -moz-animation-play-state: running;
-    -webkit-animation: rotate 60s infinite linear;
-    -webkit-animation-play-state: running;
 }
 #CClock .clock-s{
     width: 70px;
@@ -236,18 +228,6 @@ article {
     float: left;
 }
 
-@-ms-keyframes rotate{
-    0%{ -ms-transform:rotate(0deg); } 
-    100%{ -ms-transform:rotate(360deg); } 
-}
-@-moz-keyframes rotate{
-    0%{ -moz-transform:rotate(0deg); } 
-    100%{ -moz-transform:rotate(360deg); } 
-}
-@-webkit-keyframes rotate{
-    0%{ -webkit-transform:rotate(0deg); } 
-    100%{ -webkit-transform:rotate(360deg); } 
-}
 @keyframes rotate{
     0%{ transform:rotate(0deg); } 
     100%{ transform:rotate(360deg); } 
