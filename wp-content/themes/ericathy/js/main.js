@@ -1,20 +1,21 @@
 $(document).ready(function(){
-    $('.timer[data-time]').each(function(){
-        var $this = $(this);
-        var timer = getTimer();
-        timer.get( $this.data('time'), function(html){
-            $this.html(html);
-            if( $this.is(':hidden') ){
-                $this.slideDown();
-            }
-        });
-    });
     $('.clock').each(function(){
         var $this = $(this);
         setClock.call( this, function(i, s){
             $this.css({ 'transform': 'rotate('+i+'deg)' });
             $this.find('.clock-m').css({ 'transform': 'rotate('+s+'deg)' });
+            setTimeout(function(){$this.addClass('installed')}, 1000);
         });
+    });
+});
+$('.timer[data-time]').each(function(){
+    var $this = $(this);
+    var timer = getTimer();
+    timer.get( $this.data('time'), function(html){
+        $this.html(html);
+        if( $this.is(':hidden') ){
+            $this.slideDown();
+        }
     });
 });
 
