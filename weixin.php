@@ -1,5 +1,5 @@
 <?php
-   $token = "jadhi21kdsalnlpkjw12ig2j1khlolas183ah";
+   $token = "jadhi21kdsalnlpkjw12ig2j1khlolas";
 
    $signature = @$_GET['signature'];
    $timestamp = @$_GET['timestamp'];
