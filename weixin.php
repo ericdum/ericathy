@@ -1,5 +1,5 @@
 <?php
-   $token = "JADHi21kdsalnlPKJWOlas183AH";
+   $token = "jadhi21kdsalnlpkjw12ig2j1khlolas183ah";
 
    $signature = @$_GET['signature'];
    $timestamp = @$_GET['timestamp'];
@@ -11,7 +11,6 @@
        $timestamp,
        $nonce,
    );
-
 
    sort($validation, SORT_STRING);
    $validation = sha1(implode('', $validation));
