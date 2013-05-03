@@ -14,7 +14,6 @@
 
    sort($validation, SORT_STRING);
    $validation = sha1(implode('', $validation));
-
-   if( $validation == $echostr ) {
+   if( $validation == $signature ) {
        echo $echostr;
    }
