@@ -34,15 +34,20 @@ function getTimer(){
         this.get = function ( timeString, callback ) {
             var time = new Date(timeString);
             this.time = new Date();
+            this.daysInLastMonth = (new Date(this.time.getFullYear(), this.time.getMonth(), -1)).getDate();
             this.start = timeString;
             this.callback = callback || function(){};
             if( time ) {
                 var diff = Math.abs( time - this.time );
+                var diffH = this.time.getHours() - 0;
+                var diffD = this.time.getDate() - time.getDate() - (diffH<0?1:0);
+                var diffM = this.time.getMonth() - time.getMonth() - (diffD<0?1:diffH<0?1:0);
+                var diffY = this.time.getFullYear() - time.getFullYear() - (diffM<0?1:diffD<0?1:diffH<0?1:0);
                 return this.getHTML({
-                    y : Math.floor( diff / YEAR ),
-                    m : Math.floor(( diff % YEAR ) / MONTH ),
-                    d : Math.floor(( diff % MONTH ) / DAY ),
-                    h : Math.floor(( diff % DAY ) / HOUR ),
+                    y : diffY,
+                    m : diffM>=0?diffM:12+diffM,
+                    d : diffD>=0?diffD:this.daysInLastMonth+diffD,
+                    h : diffH,
                     i : Math.floor(( diff % HOUR ) / MINUTE ),
                     s : Math.floor(( diff % MINUTE )  / SECOND )
                 });
