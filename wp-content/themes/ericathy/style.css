@@ -287,7 +287,7 @@ article{
     display: inline-block;
     vertical-align: middle;
     overflow: hidden;
-    cursor: pointer;
+    /*cursor: pointer;*/
     transition: all .3s;
     -ms-transition: all .3s;
     -moz-transition: all .3s;

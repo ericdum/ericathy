@@ -24,6 +24,7 @@ function setClock( callback ){
 
     callback( i, s );
 }
+
 function getTimer(){
     return new function(){
         var the = this;
@@ -86,6 +87,7 @@ function getTimer(){
         }
     }
 }
+
 $('.clock').each(function(){
     var $this = $(this);
     setClock.call( this, function(i, s){

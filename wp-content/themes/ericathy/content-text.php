@@ -1,1 +1,1 @@
-    <a href="#" rel="bookmark">- <?php the_title(); ?> -</a>
+    <a>- <?php the_title(); ?> -</a>
