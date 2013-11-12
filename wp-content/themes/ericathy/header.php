@@ -1,3 +1,4 @@
+<!doctype html>
 <html <?php language_attributes(); ?>>
 <head dir="ltr" lang="zh-CN">
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
