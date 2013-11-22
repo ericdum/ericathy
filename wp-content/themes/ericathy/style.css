@@ -1,6 +1,5 @@
 /*
-Theme Name: Eric & Cathy Loving site
-Theme URI: http://www.ericathy.us/
+Theme Name: Eric & Cathy Loving site Theme URI: http://www.ericathy.us/
 Description: Eric & Cathy married at 2013.1.4
 Author: Eric Dum 代立晨
 Author URI: http://www.niuble.com/
@@ -521,4 +520,10 @@ screen and (        max-width: 600px){
         -moz-transform-origin-x: 4px;
         -webkit-transform-origin-x: 4px;
     }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aeaeae;
 }
