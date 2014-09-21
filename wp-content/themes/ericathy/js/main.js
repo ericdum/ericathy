@@ -58,17 +58,17 @@ function getTimer(){
             var html = '<span id="'+this.timer_id+'">';
             this.timer_id++;
             if( timer.y ){
-                html += '<strong class="timer_y">'+timer.y+'</strong><small>Y</small>';
+                html += '<strong class="timer_y">'+timer.y+'</strong><small>Year'+(timer.y>1?'s':'')+'</small>';
             }
             if( timer.y || timer.m ){
-                html += '<strong class="timer_m">'+timer.m+'</strong><small>M</small>';
+                html += '<strong class="timer_m">'+timer.m+'</strong><small>Month'+(timer.m>1?'es':'')+'</small>';
             }
-            if( timer.y || timer.m || timer.d ){
-                html += '<strong class="timer_d">'+timer.d+'</strong><small>D</small>';
-            }
-            //if( timer.y || timer.m || timer.d || timer.h ){
-                html += '<strong class="timer_h">'+timer.h+'</strong><small>H</small>';
+            //if( timer.y || timer.m || timer.d ){
+                html += '<strong class="timer_d">'+timer.d+'</strong><small>Day'+(timer.d>1?'s':'')+'</small>';
             /*
+            }
+            if( timer.y || timer.m || timer.d || timer.h ){
+                html += '<strong class="timer_h">'+timer.h+'</strong><small>H</small>';
             }
             if( timer.y || timer.m || timer.d || timer.h || timer.i ){
                 html += '<strong class="timer_i">'+timer.i+'</strong><small>M</small>';
