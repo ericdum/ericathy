@@ -60,7 +60,7 @@
 </header>
 
 <div id="theTime">
-    <h5>我们结婚已经<h5>
+    <h5>我们领证已经<h5>
     <h2 class="timer" data-time="2013-01-04"></h2>
     <h5>我们在一起已经<h5>
     <h2 class="timer" data-time="2009-09-22"></h2>
