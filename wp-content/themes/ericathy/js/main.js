@@ -9,7 +9,6 @@ $('.timer[data-time]').each(function(){
     });
 });
 
-var PERIOD = HOUR/6
 var SECOND = 1000;
 var MINUTE = 60 * SECOND;
 var HOUR = 60 * MINUTE;
@@ -17,6 +16,7 @@ var DAY = 24 * HOUR;
 var MONTH = 30 * DAY;
 var YEAR = 365 * DAY;
 var PI = 3.141592653;
+var PERIOD = HOUR/6
 
 function setClock( callback ){
     var time = new Date(),
