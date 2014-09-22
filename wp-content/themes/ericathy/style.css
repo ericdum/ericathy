@@ -176,13 +176,13 @@ h6{ font-size: 13px; }
     width: 180px;
     height: 180px;
     border-radius: 90px;
-    animation: rotate 360s infinite linear;
+    animation: rotate 600s infinite linear;
     animation-play-state: running;
-    -ms-animation: rotate 360s infinite linear;
+    -ms-animation: rotate 600s infinite linear;
     -ms-animation-play-state: running;
-    -moz-animation: rotate 360s infinite linear;
+    -moz-animation: rotate 600s infinite linear;
     -moz-animation-play-state: running;
-    -webkit-animation: rotate 360s infinite linear;
+    -webkit-animation: rotate 600s infinite linear;
     -webkit-animation-play-state: running;
 }
 #CClock .clock-m{
@@ -202,13 +202,13 @@ h6{ font-size: 13px; }
     top: 20px;
     left: 40px;
     border-radius: 35px;
-    animation: rotate 6s infinite linear;
+    animation: rotate 10s infinite linear;
     -ms-animation-play-state: running;
-    -ms-animation: rotate 6s infinite linear;
+    -ms-animation: rotate 10s infinite linear;
     -ms-animation-play-state: running;
     -moz-animation-play-state: running;
-    -moz-animation: rotate 6s infinite linear;
-    -webkit-animation: rotate 6s infinite linear;
+    -moz-animation: rotate 10s infinite linear;
+    -webkit-animation: rotate 10s infinite linear;
     -webkit-animation-play-state: running;
 }
 

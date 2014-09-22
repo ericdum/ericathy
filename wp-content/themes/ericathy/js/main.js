@@ -9,6 +9,7 @@ $('.timer[data-time]').each(function(){
     });
 });
 
+var PERIOD = HOUR/6
 var SECOND = 1000;
 var MINUTE = 60 * SECOND;
 var HOUR = 60 * MINUTE;
@@ -19,8 +20,8 @@ var PI = 3.141592653;
 
 function setClock( callback ){
     var time = new Date(),
-        i = Math.floor( (time % (HOUR/10)) / MINUTE * 6 ),
-        s = Math.floor( (time % (MINUTE/10)) / SECOND * 6 );
+        i = Math.floor( (time % PERIOD) / PERIOD * 360 ),
+        s = Math.floor( (time % (PERIOD/60) ) / (PERIOD/60) * 360 );
 
     callback( i, s );
 }
