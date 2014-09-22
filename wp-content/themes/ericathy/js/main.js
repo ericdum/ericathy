@@ -19,8 +19,8 @@ var PI = 3.141592653;
 
 function setClock( callback ){
     var time = new Date(),
-        i = Math.floor( (time % HOUR) / MINUTE * 6 ),
-        s = Math.floor( (time % MINUTE) / SECOND * 6 );
+        i = Math.floor( (time % (HOUR/10)) / MINUTE * 6 ),
+        s = Math.floor( (time % (MINUTE/10)) / SECOND * 6 );
 
     callback( i, s );
 }
